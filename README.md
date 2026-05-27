@@ -1,22 +1,20 @@
 # Dispersion-Limited-Fiber-Length
 Dispersion Limited Fiber Length
-# Objective: 
- 
+# Objective:  
 Calculate the dispersion-limited fiber length for a fiber optic transport system that 
 employs standard single-mode fiber and a directly-modulated single-mode laser diode 
-transmitter. 
- 
+transmitter.  
 Simulate the resulting system and verify that it meets performance objective.  
- 
 # Theory: 
- 
 The maximum allowable dispersion (or pulse spread) <img width="76" height="52" alt="image" src="https://github.com/user-attachments/assets/52dff457-e7aa-4312-aef4-aa4e234afb47" /> is given in terms of the transmission rate R by the following engineering guideline <img width="192" height="124" alt="image" src="https://github.com/user-attachments/assets/4fcb3de9-6a4a-48db-ba5f-f020a6c85d8b" /> This guideline provides reasonable assurance that there will be no significant inter
 symbol interference (ISI) due to pulse spread. 
- 
 For standard single-mode fiber driven by a directly-modulated laser diode transmitter, the 
 pulse spread due to chromatic dispersion is given by
+
 <img width="898" height="694" alt="image" src="https://github.com/user-attachments/assets/5499f4b0-2405-4a5f-b773-ce004a76e850" />
+
 <img width="1300" height="974" alt="image" src="https://github.com/user-attachments/assets/bbd90891-43d6-4a5d-92d2-73ed3e4e57eb" />
+
 # Layout: 
 Open up the OptiPerformer file called “Dispersion Limited Fiber.osp”. This layout uses 
 the Laser Rate Equations laser diode component with default parameters.  It models a 
@@ -30,6 +28,7 @@ directly observe the changes in the pulses due fiber dispersion. The “Optical 
 Analyzer” allows the user to view the spectral content of the signal. It this lab it is used to 
 verify that the spectral width is about 6 nm. The “BER analyzer” provides calculations of 
 the Q factor, the bit error rate (BER) and provides a plot of the eye diagram. 
+
 # Simulation:  
 Set the laser power such to achieve a transmitter output power of 0 dBm. The transmitter 
 power can be viewed by double clicking the “Output Power Meter Visualizer.” The 
@@ -37,10 +36,31 @@ power will read -100 dBm until the first run is made.
 Using the chromatic dispersion factor equation, determine the dispersion of the fiber at 
 1550 nm and set the fiber dispersion parameter accordingly. 
 Using the equations above, determine the dispersion-limited fiber length. 
+
 <img width="1262" height="1044" alt="image" src="https://github.com/user-attachments/assets/e0b20ca6-42b4-4f1b-ac9a-e4f931a85001" />
+
 # Tabulation
-<img width="960" height="1280" alt="WhatsApp Image 2026-05-14 at 2 50 44 PM (1)" src="https://github.com/user-attachments/assets/227766d4-8dff-40eb-af94-7be8fab2adf1" />
-<img width="960" height="1280" alt="WhatsApp Image 2026-05-14 at 2 50 44 PM" src="https://github.com/user-attachments/assets/93fd56e8-0221-4d7b-a3d9-8aa867b50c7d" />
+<img width="1114" height="1599" alt="image" src="https://github.com/user-attachments/assets/b0832d53-c875-4a22-b994-097b2f1df087" />
+
+<img width="1558" height="1600" alt="image" src="https://github.com/user-attachments/assets/80cd11ed-247c-4b87-bd87-1a0a8e7cdc6d" />
+
+<img width="1599" height="983" alt="image" src="https://github.com/user-attachments/assets/5063f546-3dbf-405a-9eb7-0bbd75569a68" />
+
+
+
+
+# Output
+<img width="1600" height="899" alt="image" src="https://github.com/user-attachments/assets/82d84a4d-a026-4e02-97f8-87cacb8c7683" />
+
+
+<img width="1600" height="899" alt="image" src="https://github.com/user-attachments/assets/aa5a9fee-8796-46f0-9573-724ef4f8366d" />
+
+
+<img width="1600" height="899" alt="image" src="https://github.com/user-attachments/assets/88abbfc9-9436-47d3-a058-998a70dc8122" />
+
+<img width="1600" height="899" alt="image" src="https://github.com/user-attachments/assets/5c1a08f1-9859-4869-91c6-a0779544f91d" />
+<img width="1600" height="899" alt="image" src="https://github.com/user-attachments/assets/fc750015-55cb-48f6-b966-74ad55043fe3" />
 
 # Result
-The dispersion-limited fiber length for the given optical communication system was found to be approximately 10 km. The simulation results showed acceptable BER performance with a clear eye diagram and minimal intersymbol interference. Hence, the system performance was satisfactory and remained within the allowable dispersion limit.
+The dispersion limited fiber length was found to be 9.82 km.
+As fiber length increased, pulse spreading increased and system performance degraded.
